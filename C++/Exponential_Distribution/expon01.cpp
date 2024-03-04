@@ -1,3 +1,4 @@
+// exponential_distribution
 #include <iostream>
 #include <random>
 #include <cstdlib> 
@@ -20,14 +21,15 @@ int main() {
   exponential_distribution<double> distribution(1);
 
   for (int i=0; i<MAX; ++i) {
-    x[i] = l * distribution(generator);
+    x[i] = (1/l) * distribution(generator);
     s += x[i];
   }
+  cout << "From Theory  mean E[X} = " << 1/l << endl;
   cout << "From c++ random library " << endl;
   cout << "mean E[X] = " << s/MAX <<endl;
   s = 0;
   for (int i=0; i<MAX; ++i) {
-    x[i] = l * my_exponential();
+    x[i] = (1/l) * my_exponential();
     s += x[i];
   }
   cout << "From my function" << endl;
@@ -36,3 +38,5 @@ int main() {
   return 0;
 
 }
+
+/* g++ -o exp02 -p exponential02.cpp  */
