@@ -19,7 +19,7 @@ int main() {
   
   default_random_engine generator;
   exponential_distribution<double> distribution(1);
-
+  s = 0;
   for (int i=0; i<MAX; ++i) {
     x[i] = (1/l) * distribution(generator);
     s += x[i];
