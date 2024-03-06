@@ -15,6 +15,7 @@ int main(){
   srand(time(NULL));
   printf(" λ = ");
   scanf("%lf",&l);
+  s=0;
   for(int i=0;i<MAX;i++){
     x[i] = (1/l) * exponential();
     s += x[i];
