@@ -1,0 +1,3 @@
+>gcc -lm mm1.c -o mm1
+
+>./mm1
