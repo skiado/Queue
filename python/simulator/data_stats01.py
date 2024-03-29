@@ -12,5 +12,5 @@ for l in lines:
     if int(a[1]) > Nq_max:
         Nq_max = int(a[1])
         Nqt_max = float(a[0])
-print('Nq = ',Nq_max,'Nqt = ',Nqt_max)
+print('Nq_max = ',Nq_max,'Nq_max time = ',Nqt_max)
 print('mean Nq = ',sum(Nq)/len(lines))
