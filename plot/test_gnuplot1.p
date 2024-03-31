@@ -1,5 +1,5 @@
 # Gnuplot script file for plotting data in file "test01.txt"
-# This file is called  term_gnuplot.p
+# This file is called  test_gnuplot1.p
 set terminal pslatex rotate
 set output "test01.tex"
 reset
